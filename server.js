@@ -5,8 +5,8 @@ const fs = require('fs');
 var nodemailer = require('nodemailer');
 const port = process.env.PORT || 8080;
 
-var email = process.env.inputModel.email ;
-var password = process.env.inputModel.password;
+var email = process.env.email ;
+var password = process.env.password;
 
 
 
