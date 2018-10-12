@@ -1,0 +1,26 @@
+{
+  "name": "website-change-checker",
+  "version": "1.0.0",
+  "description": "Website change checker",
+  "main": "server.js",
+  "dependencies": {
+    "request": "^2.87.0",
+	"cheerio": "^1.0.0-rc.2",
+	"nodemailer": "^4.6.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abascus/website-change-checker"
+  },
+  "author": "Abascus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abascus/website-change-checker/issues"
+  },
+  "homepage": "https://github.com/Abascus/website-change-checker#readme"
+}
