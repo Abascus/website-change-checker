@@ -58,7 +58,7 @@ function check(siteModel) {
 }
 
 function doneChecking(siteModel, text, emailText){
-    let path = "/pageSaves/" + siteModel.name + ".txt";
+    let path = "./pageSaves/" + siteModel.name + ".txt";
     if (fs.existsSync(path)) {
         fs.readFile(path, function(err, data) {
             var content = data.toString('utf8');
@@ -76,8 +76,8 @@ function doneChecking(siteModel, text, emailText){
         });
 
     }else{
-        if (!fs.existsSync("/pageSaves/")) {
-            fs.mkdirSync("/pageSaves/");
+        if (!fs.existsSync("./pageSaves/")) {
+            fs.mkdirSync("./pageSaves/");
         }
         fs.writeFile(path, text, function(err) {
             if(err) {
